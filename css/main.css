@@ -1,64 +1,30 @@
-@font-face {
-  font-family: "gotham-light";
-  src: url("../fonts/gotham/gotham-light.eot.eot?") format("eot"), url("../fonts/gotham/gotham-light.eot.woff2") format("woff2"), url("../fonts/gotham/gotham-light.eot.woff") format("woff"), url("../fonts/gotham/gotham-light.eot.ttf") format("truetype"), url("../fonts/gotham/gotham-light.eot.svg#gotham-light") format("svg");
+body {
+	background-image: url('../img/bg.jpeg');
 }
-@font-face {
-  font-family: "gotham-black";
-  src: url("../fonts/gotham/gotham-dark.eot.eot?") format("eot"), url("../fonts/gotham/gotham-dark.eot.woff2") format("woff2"), url("../fonts/gotham/gotham-dark.eot.woff") format("woff"), url("../fonts/gotham/gotham-dark.eot.ttf") format("truetype"), url("../fonts/gotham/gotham-dark.eot.svg#gotham-black") format("svg");
+.main {
+	background: rgba(40, 40, 40, 0.9);
+	margin: 0;
+	padding: 0;
 }
-* {
-  font-family: gotham-light;
+.container article, .container aside {
+	height: 100vh;
 }
-
-p {
-  color: #6F6F6F;
-  font-size: 1rem;
+.clear {
+	clear: both;
 }
-
-#solutions {
-  padding-left: 5%;
-  padding-right: 5%;
+.main .row {
+	margin-bottom: 0;
 }
-#solutions #solutions-intro {
-  text-transform: uppercase;
-  background: #FFFFFF;
+.message {
+	margin: auto;
 }
-#solutions .solution-item {
-  background: #E0E0E0;
-  padding-top: 2.5rem;
-  padding-bottom: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
-  box-sizing: border-box;
+img {
+	max-width: 100%;
 }
-#solutions .solution-item .solution-icon {
-  background: #9DC652;
-  margin-left: auto;
-  margin-right: auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  border-radius: 75px;
-  overflow: hidden;
-  padding: 25px;
+@media screen and (max-width: 600px) {
+	.container article, .container aside {
+		height: 100%;
+		margin: 5% 0 5% 0;
+	}
 }
-#solutions .solution-item h3 {
-  font-family: gotham-black;
-  margin-bottom: 20px;
-}
-#solutions .solution-item p {
-  margin-bottom: 40px;
-}
-#solutions .solution-item a {
-  border: #6F6F6F solid 3px;
-  padding: 10px 40px;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-#solutions .solution-item a:hover {
-  background: #9DC652;
-  border-color: #9DC652;
-  color: white;
-  text-decoration: none;
-}
+>>>>>>> f6e70da3ec5ad8d874e3a7519068155bfda1435f
