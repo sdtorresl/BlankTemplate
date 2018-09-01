@@ -1,0 +1,64 @@
+@import 'mixins';
+@import 'variables';
+
+@include font-face($main-font, '../fonts/gotham/gotham-light.eot');
+@include font-face($main-font-bold, '../fonts/gotham/gotham-dark.eot');
+
+* {
+	font-family: $main-font;
+}
+p {
+	color: $secondary-color;
+	font-size: 1rem;
+}
+
+#solutions {
+	padding-left: 5%;
+	padding-right: 5%;
+
+	#solutions-intro {
+		text-transform: uppercase;
+		background: $light-color;
+	}
+	.solution-item {
+		background: #E0E0E0;
+		padding-top: 2.5rem;
+		padding-bottom: 2rem;
+		padding-left: 5%;
+		padding-right: 5%;
+		box-sizing: border-box;
+
+		.solution-icon {
+			background: $primary-color;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			border-radius: 75px;
+			overflow: hidden;
+			padding: 25px;
+		}
+		h3 {
+			font-family: $main-font-bold;
+			margin-bottom: 20px;
+		}
+		p {
+			margin-bottom: 40px;
+		}
+		a {
+			border: $secondary-color solid 3px;
+			padding: 10px 40px;
+			border-radius: 50px;
+			transition: 0.3s;
+			&:hover {
+				background: $primary-color;
+				border-color: $primary-color;
+				color: white;
+				text-decoration: none;
+			}
+		}
+
+	}
+}
